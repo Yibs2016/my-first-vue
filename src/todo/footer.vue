@@ -1,15 +1,15 @@
 <template>
-  <div class="hello">
-    this is about aaa
-  </div>
+  <footer class="foot-part">
+    @Yibs
+  </footer> 
+
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Footer',
   data () {
     return {
-    
     }
   }
 }
@@ -17,18 +17,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+.foot-part {
   font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+  color: #333;
+  font-size:18px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
 }
 </style>

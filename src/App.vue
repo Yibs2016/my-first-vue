@@ -1,27 +1,47 @@
 <template>
   <div id="app">
-    <ul>
-      <router-link to="/home">首页</router-link>
-      <router-link to="/about">关于</router-link>
-      <router-link to="/touch">联系</router-link>
-    </ul>
-    <router-view/>
+    <div id="cover"></div>
+    <Header></Header>
+    <todo></todo>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+import './assets/css/global.css';
+import Header from './todo/header.vue';
+import Footer from './todo/footer.vue';
+import todo from './todo/todo.vue';
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Header,
+    Footer,
+    todo,
+  }
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  position: absolute;
+  left:0;
+  top:0;
+  bottom: 0;
+  width: 100%;
+}
+#cover{
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom: 0;
+  background-color: #999;
+  opacity: .75;
+  z-index:-1;
+  width: 100%;
 }
 </style>

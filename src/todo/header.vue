@@ -1,15 +1,14 @@
 <template>
-  <div class="hello">
-    this is about aaa
-  </div>
+  <header class="title">
+   just todo
+  </header>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Header',
   data () {
     return {
-    
     }
   }
 }
@@ -17,18 +16,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+.title {
   font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+  color: red;
+  font-size:60px;
+  height: 96px;
+  line-height: 96px;
+  text-align: center;
 }
 </style>
